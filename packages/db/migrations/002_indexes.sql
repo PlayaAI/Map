@@ -1,0 +1,10 @@
+CREATE INDEX IF NOT EXISTS idx_entities_event_id ON entities(event_id);
+CREATE INDEX IF NOT EXISTS idx_entities_source_type ON entities(source_type);
+CREATE INDEX IF NOT EXISTS idx_entities_owner_user_id ON entities(owner_user_id);
+CREATE INDEX IF NOT EXISTS idx_geometry_features_gix ON geometry_features USING GIST (geometry);
+CREATE INDEX IF NOT EXISTS idx_ai_disclosures_status ON ai_disclosures(status);
+CREATE INDEX IF NOT EXISTS idx_ai_disclosures_categories ON ai_disclosures USING GIN (ai_categories);
+CREATE INDEX IF NOT EXISTS idx_submissions_status ON submissions(status);
+CREATE INDEX IF NOT EXISTS idx_claims_status ON claims(status);
+CREATE INDEX IF NOT EXISTS idx_otp_codes_user_id ON otp_codes(user_id);
+CREATE INDEX IF NOT EXISTS idx_moderation_decisions_target ON moderation_decisions(target_type, target_id);

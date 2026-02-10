@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "camp-001",
+        "name": "Dusty Circuits",
+        "description": "AI art and shade dome"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.2065,
+              40.7861
+            ],
+            [
+              -119.206,
+              40.7861
+            ],
+            [
+              -119.206,
+              40.7865
+            ],
+            [
+              -119.2065,
+              40.7865
+            ],
+            [
+              -119.2065,
+              40.7861
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

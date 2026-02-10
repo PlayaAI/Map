@@ -1,0 +1,19 @@
+{
+  "name": "playa-ai-map",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Playa AI Map monorepo (web, API, worker, DB)",
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev:web": "pnpm --filter @playa/web dev",
+    "dev:api": "pnpm --filter @playa/api dev",
+    "dev:worker": "pnpm --filter @playa/worker dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "db:migrate": "pnpm --filter @playa/db migrate"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
